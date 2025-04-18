@@ -1,0 +1,82 @@
+---
+// src/pages/about.astro
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sobre mí</title>
+    <style>
+      /* Estilos globales y específicos para esta página */
+
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      h1 {
+        color: #1a73e8;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      p {
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-top: 50px;
+      }
+
+      a {
+        color: #1a73e8;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .navigation-links {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .navigation-links a {
+        color: #1a73e8;
+        text-decoration: none;
+        margin: 0 15px;
+      }
+
+      .navigation-links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    
+    <h1>Sobre mí</h1>
+    <p>Hola, soy un programador que esta usando astro, y este es un proyecto hecho con Astro.</p>
+
+    <!-- Enlaces de navegación a las otras páginas -->
+    <div class="navigation-links">
+      <a href="/">Ir a la página de inicio</a>
+      <a href="/contact">Ir a la página de contacto</a>
+    </div>
+
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,78 @@
+---
+// src/pages/index.astro
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inicio</title>
+    <style>
+      /* Estilos globales y específicos para esta página */
+
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      h1 {
+        color: #1a73e8;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      p {
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-top: 50px;
+      }
+
+      a {
+        color: #1a73e8;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .contact-link,
+      .about-link {
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    
+    <h1>Bienvenido a mi sitio Astro 🚀</h1>
+    <p>Esta es la página de inicio.</p>
+
+    <!-- Enlace a la página de contacto -->
+    <div class="contact-link">
+      <a href="/contact">Ir a la página de contacto</a>
+    </div>
+
+    <!-- Enlace a la página sobre mí -->
+    <div class="about-link">
+      <a href="/about">Ir a la página de sobre mí</a>
+    </div>
+
+    <Footer />
+  </body>
+</html>
